@@ -13,6 +13,7 @@
 		DCC311C229B77C1300E23278 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC311C129B77C1300E23278 /* Preview Assets.xcassets */; };
 		DCC311CB29B8C8AF00E23278 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC311C929B8C8AE00E23278 /* sound-rise.mp3 */; };
 		DCC311CC29B8C8AF00E23278 /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC311CA29B8C8AE00E23278 /* sound-click.mp3 */; };
+		DCC311CE29B9D60C00E23278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC311CD29B9D60C00E23278 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		DCC311C129B77C1300E23278 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCC311C929B8C8AE00E23278 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		DCC311CA29B8C8AE00E23278 /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
+		DCC311CD29B9D60C00E23278 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +57,11 @@
 		DCC311B929B77C1100E23278 /* Honey Moon */ = {
 			isa = PBXGroup;
 			children = (
-				DCC311C829B8C8AE00E23278 /* Sounds */,
 				DCC311BA29B77C1100E23278 /* Honey_MoonApp.swift */,
 				DCC311BC29B77C1100E23278 /* ContentView.swift */,
 				DCC311BE29B77C1300E23278 /* Assets.xcassets */,
+				DCC311CD29B9D60C00E23278 /* LaunchScreen.storyboard */,
+				DCC311C829B8C8AE00E23278 /* Sounds */,
 				DCC311C029B77C1300E23278 /* Preview Content */,
 			);
 			path = "Honey Moon";
@@ -142,6 +145,7 @@
 				DCC311CB29B8C8AF00E23278 /* sound-rise.mp3 in Resources */,
 				DCC311CC29B8C8AF00E23278 /* sound-click.mp3 in Resources */,
 				DCC311C229B77C1300E23278 /* Preview Assets.xcassets in Resources */,
+				DCC311CE29B9D60C00E23278 /* LaunchScreen.storyboard in Resources */,
 				DCC311BF29B77C1300E23278 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +215,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -265,6 +272,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -289,6 +299,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,6 +329,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
