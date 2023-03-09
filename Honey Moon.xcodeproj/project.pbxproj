@@ -15,6 +15,7 @@
 		DCC311CC29B8C8AF00E23278 /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC311CA29B8C8AE00E23278 /* sound-click.mp3 */; };
 		DCC311CE29B9D60C00E23278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC311CD29B9D60C00E23278 /* LaunchScreen.storyboard */; };
 		DCC311D029B9DF3900E23278 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311CF29B9DF3800E23278 /* HoneymoonModel.swift */; };
+		DCC311D429B9E08E00E23278 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311D329B9E08E00E23278 /* HoneymoonData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DCC311CA29B8C8AE00E23278 /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
 		DCC311CD29B9D60C00E23278 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCC311CF29B9DF3800E23278 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
+		DCC311D329B9E08E00E23278 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		DCC311B929B77C1100E23278 /* Honey Moon */ = {
 			isa = PBXGroup;
 			children = (
+				DCC311D229B9E06A00E23278 /* Data */,
 				DCC311D129B9DF4900E23278 /* Models */,
 				DCC311BA29B77C1100E23278 /* Honey_MoonApp.swift */,
 				DCC311BC29B77C1100E23278 /* ContentView.swift */,
@@ -93,6 +96,14 @@
 				DCC311CF29B9DF3800E23278 /* HoneymoonModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DCC311D229B9E06A00E23278 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DCC311D329B9E08E00E23278 /* HoneymoonData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC311D429B9E08E00E23278 /* HoneymoonData.swift in Sources */,
 				DCC311D029B9DF3900E23278 /* HoneymoonModel.swift in Sources */,
 				DCC311BD29B77C1100E23278 /* ContentView.swift in Sources */,
 				DCC311BB29B77C1100E23278 /* Honey_MoonApp.swift in Sources */,
