@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showBookingAlert: Bool = false
+    
     var body: some View {
         VStack {
             HeaderView()
@@ -18,9 +20,15 @@ struct ContentView: View {
             
             Spacer()
             
-            FooterView()
+            FooterView(showBookingAlert: $showBookingAlert)
         }
         .padding()
+        .alert(isPresented: $showBookingAlert) {
+            Alert(
+                title: Text("Success"),
+                message: Text("Wishing a lovely and most precious of the times together for the amazing couple"),
+                dismissButton: .default(Text("Happy Honeymoon!")))
+        }
     }
 }
 
