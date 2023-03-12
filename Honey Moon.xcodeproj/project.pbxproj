@@ -19,6 +19,8 @@
 		DCC311D729B9E11100E23278 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311D629B9E11100E23278 /* CardView.swift */; };
 		DCC311DA29BC7C5E00E23278 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311D929BC7C5E00E23278 /* HeaderView.swift */; };
 		DCC311DC29BDCD2D00E23278 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311DB29BDCD2D00E23278 /* FooterView.swift */; };
+		DCC311DF29BDD32C00E23278 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311DE29BDD32C00E23278 /* HeaderComponent.swift */; };
+		DCC311E129BDD3B300E23278 /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E029BDD3B300E23278 /* GuideComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		DCC311D629B9E11100E23278 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DCC311D929BC7C5E00E23278 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		DCC311DB29BDCD2D00E23278 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		DCC311DE29BDD32C00E23278 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
+		DCC311E029BDD3B300E23278 /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		DCC311B929B77C1100E23278 /* Honey Moon */ = {
 			isa = PBXGroup;
 			children = (
+				DCC311DD29BDD31B00E23278 /* Components */,
 				DCC311D829B9E11E00E23278 /* Utilities */,
 				DCC311D529B9E0FF00E23278 /* Views */,
 				DCC311D229B9E06A00E23278 /* Data */,
@@ -129,6 +134,15 @@
 				DCC311BE29B77C1300E23278 /* Assets.xcassets */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DCC311DD29BDD31B00E23278 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DCC311DE29BDD32C00E23278 /* HeaderComponent.swift */,
+				DCC311E029BDD3B300E23278 /* GuideComponent.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,9 +222,11 @@
 				DCC311DC29BDCD2D00E23278 /* FooterView.swift in Sources */,
 				DCC311DA29BC7C5E00E23278 /* HeaderView.swift in Sources */,
 				DCC311D029B9DF3900E23278 /* HoneymoonModel.swift in Sources */,
+				DCC311DF29BDD32C00E23278 /* HeaderComponent.swift in Sources */,
 				DCC311BD29B77C1100E23278 /* ContentView.swift in Sources */,
 				DCC311BB29B77C1100E23278 /* Honey_MoonApp.swift in Sources */,
 				DCC311D729B9E11100E23278 /* CardView.swift in Sources */,
+				DCC311E129BDD3B300E23278 /* GuideComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
