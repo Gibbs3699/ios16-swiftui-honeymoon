@@ -36,7 +36,6 @@ struct GuideComponent: View {
                 Divider().padding(.bottom, 4)
                 Text(description)
                     .font(.footnote)
-                    .fontWeight(.heavy)
                     .foregroundColor(.secondary)
                     .fixedSize(horizontal: false, vertical: false)
             }
