@@ -23,6 +23,7 @@
 		DCC311E129BDD3B300E23278 /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E029BDD3B300E23278 /* GuideComponent.swift */; };
 		DCC311E329BDDA5D00E23278 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E229BDDA5D00E23278 /* GuideView.swift */; };
 		DCC311E529BF3CB900E23278 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E429BF3CB900E23278 /* InfoView.swift */; };
+		DCC311E729BF3D8600E23278 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E629BF3D8600E23278 /* TitleModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		DCC311E029BDD3B300E23278 /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
 		DCC311E229BDDA5D00E23278 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		DCC311E429BF3CB900E23278 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		DCC311E629BF3D8600E23278 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		DCC311B929B77C1100E23278 /* Honey Moon */ = {
 			isa = PBXGroup;
 			children = (
+				DCC311E829BF3DB000E23278 /* Modifier */,
 				DCC311DD29BDD31B00E23278 /* Components */,
 				DCC311D829B9E11E00E23278 /* Utilities */,
 				DCC311D529B9E0FF00E23278 /* Views */,
@@ -149,6 +152,14 @@
 				DCC311E029BDD3B300E23278 /* GuideComponent.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		DCC311E829BF3DB000E23278 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				DCC311E629BF3D8600E23278 /* TitleModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				DCC311D429B9E08E00E23278 /* HoneymoonData.swift in Sources */,
 				DCC311E529BF3CB900E23278 /* InfoView.swift in Sources */,
 				DCC311DC29BDCD2D00E23278 /* FooterView.swift in Sources */,
+				DCC311E729BF3D8600E23278 /* TitleModifier.swift in Sources */,
 				DCC311DA29BC7C5E00E23278 /* HeaderView.swift in Sources */,
 				DCC311D029B9DF3900E23278 /* HoneymoonModel.swift in Sources */,
 				DCC311DF29BDD32C00E23278 /* HeaderComponent.swift in Sources */,
