@@ -40,13 +40,7 @@ struct GuideView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Contonue".uppercased())
-                        .font(.headline)
-                        .padding()
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .background(
-                            Capsule().fill(.pink)
-                        )
-                        .foregroundColor(.white)
+                        .modifier(ButtonModifier())
                 }
             }
             .frame(minWidth: 0, maxWidth: .infinity)

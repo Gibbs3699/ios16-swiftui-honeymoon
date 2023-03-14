@@ -24,6 +24,7 @@
 		DCC311E329BDDA5D00E23278 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E229BDDA5D00E23278 /* GuideView.swift */; };
 		DCC311E529BF3CB900E23278 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E429BF3CB900E23278 /* InfoView.swift */; };
 		DCC311E729BF3D8600E23278 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E629BF3D8600E23278 /* TitleModifier.swift */; };
+		DCC311EA29C06CD200E23278 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E929C06CD200E23278 /* ButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		DCC311E229BDDA5D00E23278 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		DCC311E429BF3CB900E23278 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		DCC311E629BF3D8600E23278 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		DCC311E929C06CD200E23278 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				DCC311E629BF3D8600E23278 /* TitleModifier.swift */,
+				DCC311E929C06CD200E23278 /* ButtonModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				DCC311E729BF3D8600E23278 /* TitleModifier.swift in Sources */,
 				DCC311DA29BC7C5E00E23278 /* HeaderView.swift in Sources */,
 				DCC311D029B9DF3900E23278 /* HoneymoonModel.swift in Sources */,
+				DCC311EA29C06CD200E23278 /* ButtonModifier.swift in Sources */,
 				DCC311DF29BDD32C00E23278 /* HeaderComponent.swift in Sources */,
 				DCC311BD29B77C1100E23278 /* ContentView.swift in Sources */,
 				DCC311BB29B77C1100E23278 /* Honey_MoonApp.swift in Sources */,

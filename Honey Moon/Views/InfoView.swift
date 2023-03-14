@@ -15,19 +15,24 @@ struct InfoView: View {
                 
                 Spacer(minLength: 10)
                 
+                Text("App Info")
+                    .fontWeight(.black)
+                    .modifier(TitleModifier())
+                
+                HStack {
+                    Text("Application").foregroundColor(Color.gray)
+                    Spacer()
+                    Text("Honeymoon")
+                }
+                
                 Text("Get Started!")
                     .fontWeight(.black)
+                    .modifier(TitleModifier())
                 
-                Text("Discover and pick the perfect destination for your romantic Honeymoon!")
-                    .lineLimit(nil)
-                    .multilineTextAlignment(.center)
-                
-                Spacer(minLength: 10)
-                
-                VStack(alignment: .leading, spacing: 25) {
-                    GuideComponent(title: "Like", subtitle: "Swipe right", description: "Do you like this destination? Touch the screen and swipe right. It will be saved to the favourites.", icon: "heart.circle")
-                    GuideComponent(title: "Dismiss", subtitle: "Swipe left", description: "Would you eather skip this place? Touch the screen and swipe left. You will no longer see it.", icon: "xmark.circle")
-                    GuideComponent(title: "Book", subtitle: "Tap the button", description: "Would you eather skip this place? Touch the screen and swipe left. You will no longer see it.", icon: "checkmark.square")
+                HStack {
+                    Text("Photos").foregroundColor(Color.gray)
+                    Spacer()
+                    Text("Unsplash")
                 }
                 
                 Spacer(minLength: 10)
@@ -36,13 +41,7 @@ struct InfoView: View {
                     print("Tapped!!!!!")
                 }) {
                     Text("Contonue".uppercased())
-                        .font(.headline)
-                        .padding()
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .background(
-                            Capsule().fill(.pink)
-                        )
-                        .foregroundColor(.white)
+                        .modifier(ButtonModifier())
                 }
             }
             .frame(minWidth: 0, maxWidth: .infinity)
