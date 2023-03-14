@@ -10,10 +10,11 @@ import SwiftUI
 struct ContentView: View {
     @State var showBookingAlert: Bool = false
     @State var showGuideView: Bool = false
+    @State var showInfoView: Bool = false
     
     var body: some View {
         VStack {
-            HeaderView(showGuideView: $showGuideView)
+            HeaderView(showGuideView: $showGuideView, showInfoView: $showInfoView)
             
             Spacer()
             
