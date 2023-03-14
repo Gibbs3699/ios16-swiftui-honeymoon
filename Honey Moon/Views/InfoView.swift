@@ -25,7 +25,7 @@ struct InfoView: View {
                     Text("Honeymoon")
                 }
                 
-                Text("Get Started!")
+                Text("Credits")
                     .fontWeight(.black)
                     .modifier(TitleModifier())
                 
