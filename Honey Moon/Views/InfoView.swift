@@ -19,21 +19,13 @@ struct InfoView: View {
                     .fontWeight(.black)
                     .modifier(TitleModifier())
                 
-                HStack {
-                    Text("Application").foregroundColor(Color.gray)
-                    Spacer()
-                    Text("Honeymoon")
-                }
+                AppInfoView()
                 
                 Text("Credits")
                     .fontWeight(.black)
                     .modifier(TitleModifier())
                 
-                HStack {
-                    Text("Photos").foregroundColor(Color.gray)
-                    Spacer()
-                    Text("Unsplash")
-                }
+                CreditsView()
                 
                 Spacer(minLength: 10)
                 
@@ -55,5 +47,57 @@ struct InfoView: View {
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
         InfoView()
+    }
+}
+
+struct AppInfoView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10.0) {
+            RowAppInfoView(itemOne: "Application", itemTwo: "HoneyMoon")
+            RowAppInfoView(itemOne: "Compatibility", itemTwo: "iPhone and iPad")
+            RowAppInfoView(itemOne: "Developer", itemTwo: "John/Jane")
+            RowAppInfoView(itemOne: "Application", itemTwo: "HoneyMoon")
+            RowAppInfoView(itemOne: "Compatibility", itemTwo: "iPhone and iPad")
+            RowAppInfoView(itemOne: "Developer", itemTwo: "John/Jane")
+            RowAppInfoView(itemOne: "Application", itemTwo: "HoneyMoon")
+            RowAppInfoView(itemOne: "Compatibility", itemTwo: "iPhone and iPad")
+            RowAppInfoView(itemOne: "Developer", itemTwo: "John/Jane")
+        }
+    }
+}
+
+struct RowAppInfoView: View {
+    var itemOne: String
+    var itemTwo: String
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Text(itemOne).foregroundColor(Color.gray)
+                Spacer()
+                Text(itemTwo)
+            }
+            Divider()
+        }
+    }
+}
+
+struct CreditsView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10.0) {
+            HStack {
+                Text("Photos").foregroundColor(Color.gray)
+                Spacer()
+                Text("Unsplash")
+            }
+            
+            Divider()
+            
+            Text("Photos").foregroundColor(Color.gray)
+            
+            Text("Shifaaz Shamoon (Maldives), Grillot Edouard (France), Evan Wise (Greece), Christoph Schulz (United Arab Emirates), Andrew Coelho (USA), Damiano Baschiera (Italy), Daniel Olah (Hungary), Andrzej Rusinowski (Poland), Lucas Miguel (Slovenia), Florencia Potter (Spain), Ian Simmonds (USA), Ian Keefe (Canada), Denys Nevozhai (Thailand), David Köhler (Italy), Andre Benz (USA), Alexandre Chambon (South Korea), Roberto Nickson (Mexico), Ajit Paul Abraham (UK), Jeremy Bishop (USA), Davi Costa (Brazil), Liam Pozz (Australia)")
+                .multilineTextAlignment(.leading)
+                .font(.footnote)
+        }
     }
 }
