@@ -11,6 +11,7 @@ struct ContentView: View {
     @State var showBookingAlert: Bool = false
     @State var showGuideView: Bool = false
     @State var showInfoView: Bool = false
+    @GestureState private var dragState = DragState.inactive
     
     var cardViews: [CardView] = {
         var views = [CardView]()
@@ -64,6 +65,8 @@ struct ContentView: View {
         VStack {
             
             HeaderView(showGuideView: $showGuideView, showInfoView: $showInfoView)
+                .opacity(dragState.isDragging ? 0.0 : 1.0)
+                .animation(.default, value: 0)
             
             Spacer()
             
@@ -78,6 +81,8 @@ struct ContentView: View {
             Spacer()
             
             FooterView(showBookingAlert: $showBookingAlert)
+                .opacity(dragState.isDragging ? 0.0 : 1.0)
+                .animation(.default, value: 0)
         }
         .padding()
         .alert(isPresented: $showBookingAlert) {
