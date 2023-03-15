@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardView: View, Identifiable {
     let id = UUID()
     let honeymoon: Destination
     
@@ -41,7 +41,7 @@ struct CardView: View {
                         .padding(.vertical, 5)
                         .background(
                             Capsule().fill(Color.white)
-                        )
+                    )
                 }
                 .frame(minWidth: 280)
                 .padding(.bottom, 50),
@@ -52,7 +52,7 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(honeymoon: honeymoonData[1])
+        CardView(honeymoon: honeymoonData[0])
             .previewLayout(.sizeThatFits)
     }
 }
