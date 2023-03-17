@@ -25,6 +25,7 @@
 		DCC311E529BF3CB900E23278 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E429BF3CB900E23278 /* InfoView.swift */; };
 		DCC311E729BF3D8600E23278 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E629BF3D8600E23278 /* TitleModifier.swift */; };
 		DCC311EA29C06CD200E23278 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E929C06CD200E23278 /* ButtonModifier.swift */; };
+		DCC311ED29C4535400E23278 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311EC29C4535400E23278 /* CardTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		DCC311E429BF3CB900E23278 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		DCC311E629BF3D8600E23278 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		DCC311E929C06CD200E23278 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		DCC311EC29C4535400E23278 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		DCC311B929B77C1100E23278 /* Honey Moon */ = {
 			isa = PBXGroup;
 			children = (
+				DCC311EB29C4533400E23278 /* Extension */,
 				DCC311E829BF3DB000E23278 /* Modifier */,
 				DCC311DD29BDD31B00E23278 /* Components */,
 				DCC311D829B9E11E00E23278 /* Utilities */,
@@ -163,6 +166,14 @@
 				DCC311E929C06CD200E23278 /* ButtonModifier.swift */,
 			);
 			path = Modifier;
+			sourceTree = "<group>";
+		};
+		DCC311EB29C4533400E23278 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DCC311EC29C4535400E23278 /* CardTransition.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 				DCC311BB29B77C1100E23278 /* Honey_MoonApp.swift in Sources */,
 				DCC311D729B9E11100E23278 /* CardView.swift in Sources */,
 				DCC311E129BDD3B300E23278 /* GuideComponent.swift in Sources */,
+				DCC311ED29C4535400E23278 /* CardTransition.swift in Sources */,
 				DCC311E329BDDA5D00E23278 /* GuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

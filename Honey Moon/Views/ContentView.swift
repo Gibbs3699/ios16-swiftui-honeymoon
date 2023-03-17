@@ -14,6 +14,7 @@ struct ContentView: View {
     @GestureState private var dragState = DragState.inactive
     private var dragAreaThreshold: CGFloat = 65
     @State private var lastCardIndex: Int = 1
+    @State private var cardRemovalTransition = AnyTransition.traillingBottom
     
     // add @State to change value dynamically
     @State var cardViews: [CardView] = {
@@ -120,6 +121,18 @@ struct ContentView: View {
                             break
                         }
                     })
+                    .onChanged({ (value) in
+                        guard case .second(true, let drag?) = value else {
+                            return
+                        }
+                        
+                        if drag.translation.width < -self.dragAreaThreshold {
+                            self.cardRemovalTransition = .leadingBottom
+                        }
+                        if drag.translation.width > self.dragAreaThreshold {
+                            self.cardRemovalTransition = .traillingBottom
+                        }
+                    })
                     .onEnded({ (value) in
                         guard case .second(true, let drag?) = value else {
                             return
@@ -129,7 +142,7 @@ struct ContentView: View {
                             self.moveCards()
                         }
                     })
-                )
+                ).transition(self.cardRemovalTransition)
             }
             .padding(.horizontal)
             
@@ -139,7 +152,6 @@ struct ContentView: View {
                 .opacity(dragState.isDragging ? 0.0 : 1.0)
                 .animation(.default, value: 0)
         }
-        .padding()
         .alert(isPresented: $showBookingAlert) {
             Alert(
                 title: Text("Success"),
