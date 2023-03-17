@@ -26,6 +26,7 @@
 		DCC311E729BF3D8600E23278 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E629BF3D8600E23278 /* TitleModifier.swift */; };
 		DCC311EA29C06CD200E23278 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311E929C06CD200E23278 /* ButtonModifier.swift */; };
 		DCC311ED29C4535400E23278 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311EC29C4535400E23278 /* CardTransition.swift */; };
+		DCC311F029C4560F00E23278 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC311EF29C4560F00E23278 /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		DCC311E629BF3D8600E23278 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		DCC311E929C06CD200E23278 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		DCC311EC29C4535400E23278 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
+		DCC311EF29C4560F00E23278 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		DCC311B929B77C1100E23278 /* Honey Moon */ = {
 			isa = PBXGroup;
 			children = (
+				DCC311EE29C455FA00E23278 /* Helper */,
 				DCC311EB29C4533400E23278 /* Extension */,
 				DCC311E829BF3DB000E23278 /* Modifier */,
 				DCC311DD29BDD31B00E23278 /* Components */,
@@ -176,6 +179,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		DCC311EE29C455FA00E23278 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DCC311EF29C4560F00E23278 /* PlaySound.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,6 +270,7 @@
 				DCC311DF29BDD32C00E23278 /* HeaderComponent.swift in Sources */,
 				DCC311BD29B77C1100E23278 /* ContentView.swift in Sources */,
 				DCC311BB29B77C1100E23278 /* Honey_MoonApp.swift in Sources */,
+				DCC311F029C4560F00E23278 /* PlaySound.swift in Sources */,
 				DCC311D729B9E11100E23278 /* CardView.swift in Sources */,
 				DCC311E129BDD3B300E23278 /* GuideComponent.swift in Sources */,
 				DCC311ED29C4535400E23278 /* CardTransition.swift in Sources */,
